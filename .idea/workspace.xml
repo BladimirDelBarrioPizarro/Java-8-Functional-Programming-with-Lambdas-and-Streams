@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b26c1-5f24-4224-8467-24747792ccef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/IUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/ReferenceToMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/Work.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/WorkString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/Optional/OptionalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,15 +67,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReferenceToMethod.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReferenceToMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/ReferenceToMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+            <state relative-caret-position="398">
+              <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1691#1692#0" expanded="true" />
                 <element signature="e#1753#1754#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionalTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Optional/OptionalTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,15 +162,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -508,6 +507,7 @@
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/IUser.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/ReferenceToMethod.java" />
+        <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/Optional/OptionalTest.java" />
       </list>
     </option>
   </component>
@@ -562,6 +562,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bladi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bladi" type="462c0819:PsiDirectoryNode" />
+              <item name="Optional" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lambda" type="b2602c69:ProjectViewProjectNode" />
@@ -625,14 +633,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReferenceToMethod">
-    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lambda.bladi.Lambda" />
+  <component name="RunManager" selected="Application.OptionalTest">
+    <configuration name="OptionalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lambda.bladi.Optional.OptionalTest" />
       <module name="java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lambda.bladi.*" />
+          <option name="PATTERN" value="com.lambda.bladi.Optional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -741,19 +749,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Lambda" />
       <item itemvalue="Gradle.lambda [clean]" />
       <item itemvalue="Gradle.lambda [buildNeeded]" />
       <item itemvalue="Application.ReferenceToMethod" />
       <item itemvalue="Gradle.lambda [buildDependents]" />
+      <item itemvalue="Application.OptionalTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReferenceToMethod" />
+        <item itemvalue="Application.OptionalTest" />
         <item itemvalue="Gradle.lambda [buildDependents]" />
+        <item itemvalue="Application.ReferenceToMethod" />
         <item itemvalue="Gradle.lambda [buildNeeded]" />
         <item itemvalue="Gradle.lambda [clean]" />
-        <item itemvalue="Application.Lambda" />
       </list>
     </recent_temporary>
   </component>
@@ -773,12 +781,12 @@
       <workItem from="1554545629099" duration="219000" />
       <workItem from="1554545891878" duration="1028000" />
       <workItem from="1554546954114" duration="67000" />
-      <workItem from="1554547056617" duration="4868000" />
+      <workItem from="1554547056617" duration="7598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22910000" />
+    <option name="totallyTimeSpent" value="25640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -828,9 +836,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Lambda.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -1122,12 +1127,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/ReferenceToMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="398">
+          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1691#1692#0" expanded="true" />
             <element signature="e#1753#1754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Optional/OptionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
