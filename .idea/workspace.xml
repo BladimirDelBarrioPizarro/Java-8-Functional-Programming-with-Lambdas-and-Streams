@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b26c1-5f24-4224-8467-24747792ccef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,8 +84,8 @@
       <file leaf-file-name="StreamTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="221">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -768,12 +767,12 @@
       <workItem from="1554545891878" duration="1028000" />
       <workItem from="1554546954114" duration="67000" />
       <workItem from="1554547056617" duration="10934000" />
-      <workItem from="1554632843377" duration="1634000" />
+      <workItem from="1554632843377" duration="2128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30610000" />
+    <option name="totallyTimeSpent" value="31104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1113,8 +1112,8 @@
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/impl/zxcz.java" />
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+        <state relative-caret-position="221">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
