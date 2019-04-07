@@ -2,6 +2,7 @@ package com.lambda.bladi.Streams;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamTest {
@@ -25,11 +26,23 @@ public class StreamTest {
 
     public static void main(String args[]){
         setUpUser();
-        Stream stream = Stream.of(users);
-        users.stream();
+        //Stream stream = Stream.of(users);
+        //users.stream();
+
 
         users.stream().forEach(users -> users.setNombre(users.getNombre()+" Apellido"));
         showList();
+
+        System.out.println("------- MAP ---------------");
+
+        //Map Transformación del flujo original stream a una lista String con el nombre de todos los usuarios
+        List<String> list = users.stream().map(item -> item.getNombre()).collect(Collectors.toList());
+        list.stream().forEach(item -> System.out.println(item));
+
+
+
+
+
 
 
 
