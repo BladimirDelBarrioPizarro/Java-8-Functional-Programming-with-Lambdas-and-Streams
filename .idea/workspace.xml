@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b26c1-5f24-4224-8467-24747792ccef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -84,10 +85,11 @@
       <file leaf-file-name="StreamTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="442">
+              <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2467#2481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +134,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -485,11 +487,11 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/Work.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/WorkString.java" />
-        <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/IUser.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/ReferenceToMethod.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/Optional/OptionalTest.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/User.java" />
+        <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java" />
         <option value="$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java" />
       </list>
     </option>
@@ -521,8 +523,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -598,7 +599,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -767,12 +769,13 @@
       <workItem from="1554545891878" duration="1028000" />
       <workItem from="1554546954114" duration="67000" />
       <workItem from="1554547056617" duration="10934000" />
-      <workItem from="1554632843377" duration="2128000" />
+      <workItem from="1554632843377" duration="2925000" />
+      <workItem from="1555151951734" duration="2328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31104000" />
+    <option name="totallyTimeSpent" value="34229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -788,11 +791,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295099" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3649635" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1068,13 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/IUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1110,12 +1106,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/impl/zxcz.java" />
+    <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/ReferenceToMethod/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/lambda/bladi/Streams/StreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="442">
+          <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2467#2481#0" expanded="true" />
           </folding>
         </state>
       </provider>
