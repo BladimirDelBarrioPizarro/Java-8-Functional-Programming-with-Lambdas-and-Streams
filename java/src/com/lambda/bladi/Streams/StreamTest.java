@@ -1,9 +1,6 @@
 package com.lambda.bladi.Streams;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -21,12 +18,22 @@ public class StreamTest {
         users.add(new User(4,"Angela"));
         users.add(new User(5,"Bladi"));
         users.add(new User(6,"Mama"));
+        users.add(new User(7,"Mama"));
     }
 
 
     // forEach mostrar lista
     private static void showList(){
         users.stream().forEach(item->System.out.println(item.getId()+" "+item.getNombre()));
+    }
+
+    private static String convertToCapitalLetters(String names){
+        try{
+            Thread.sleep(1000);
+        }catch (InterruptedException ex){
+            ex.printStackTrace();
+        }
+        return names.toUpperCase();
     }
 
     public static void main(String args[]){
@@ -40,7 +47,7 @@ public class StreamTest {
 
         System.out.println("------- MAP ---------------");
 
-        //Map Transformación del flujo original stream a una lista String con el nombre de todos los usuarios
+        //Map Transformación del flujo original stream a una lista String
         List<String> list = users.stream().map(item -> item.getNombre()).collect(Collectors.toList());
         list.stream().forEach(item -> System.out.println(item));
 
@@ -170,7 +177,99 @@ public class StreamTest {
         System.out.println("Range: "+IntStream.range(0,100).sum());
 
 
+        System.out.println("------- REDUCE ---------------");
+        //Toma el string y los combina en una operación repetida de operación
+        setUpUser();
+        Integer num = users.stream()
+                .map(User::getId)
+                .reduce(0,Integer::sum);
 
+        System.out.println("Reduce: "+num);
+
+
+
+        System.out.println("------- JOIN ---------------");
+        //Devuelve un recopilador que concatena la secuencia de char secuency y devuelve el resultado commo una cadena
+        setUpUser();
+        String names = users.stream()
+                    .map(User::getNombre)
+                    .collect(Collectors.joining(" - "))
+                    .toString();
+           System.out.println(names);
+
+
+
+        System.out.println("------- TOSET ---------------");
+        //Nos devuelve un colector que acumula los elementos de entrada en un nuevo set. Set no no s garantiza el orden pero si que no haya elelmentos repetidos.
+        setUpUser();
+        Set<String> setNames =  users.stream()
+                .map(User::getNombre)
+                .collect(Collectors.toSet());
+        setNames.stream().forEach(item -> System.out.println(item));
+
+
+
+        System.out.println("------- SUMMARIZING DOUBLE ---------------");
+        //Nos devuelve estadísticas Count, sum min, average, max
+
+        setUpUser();
+        DoubleSummaryStatistics statistics = users.stream()
+                .collect(Collectors.summarizingDouble(User::getId));
+        System.out.println(statistics);
+        //Otra forma
+        DoubleSummaryStatistics statistics2 = users.stream()
+            .mapToDouble(User::getId)
+            .summaryStatistics();
+        System.out.println(statistics2);
+
+
+        System.out.println("-------  PARTITIONINGBY ---------------");
+        //Nos devuelve las listas de elementos la divide en dos una en la que se cumple el predicado y otra en la que no
+        setUpUser();
+        List<Integer> numList = Arrays.asList(5,7,34,56,2,3,67,4,98);
+        Map<Boolean,List<Integer>> isMax = numList.stream()
+                .collect(Collectors.partitioningBy(item -> item > 10));
+
+         System.out.println(".. Se cumple el predicado");
+         isMax.get(true).stream().forEach(item -> System.out.println(item));
+         System.out.println(".. No se cumple el predicado");
+         isMax.get(false).stream().forEach(item -> System.out.println(item));
+
+
+        System.out.println("-------  GROUPINGBY ---------------");
+        //Agrupamos según la propiedad
+        // Por orden alfabético. Segun el nombre y la letra que especifiquemos nos agrupa dos listas
+        setUpUser();
+        Map<Character,List<User>> group  = users.stream()
+                .collect(Collectors.groupingBy(item -> new Character(item.getNombre().charAt(0))));
+        group.get('B').stream().forEach(item -> System.out.println(item.getNombre()));
+        group.get('M').stream().forEach(item -> System.out.println(item.getNombre()));
+
+
+
+        System.out.println("-------  MAPPING ---------------");
+        //Nos transforma una lista de objetos a otra
+        setUpUser();
+        List<String> persons = users.stream()
+                .collect(Collectors.mapping(User::getNombre, Collectors.toList()));
+        persons.stream().forEach(item -> System.out.println(item));
+
+
+        System.out.println("-------  STREAM PARALELO -----------");
+        //Forma de ejecutar las operaciones del stream a través de hilos
+        setUpUser();
+        Long num1 = System.currentTimeMillis();
+        users.stream().forEach(item -> convertToCapitalLetters(item.getNombre()));
+        Long num2 = System.currentTimeMillis();
+        System.out.println("Normal");
+        System.out.println(num1);
+        System.out.println(num2);
+        num1 = System.currentTimeMillis();
+        users.parallelStream().forEach(item -> convertToCapitalLetters(item.getNombre()));
+        num2 = System.currentTimeMillis();
+        System.out.println("Paralelo");
+        System.out.println(num1);
+        System.out.println(num2);
 
 
 
