@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 public class StreamTest {
@@ -132,6 +133,44 @@ public class StreamTest {
         List<String> abcFilter2 = Arrays.stream(abc2)
                 .distinct().collect(Collectors.toList());
         abcFilter2.stream().forEach(item -> System.out.println(item));
+
+
+        System.out.println("------- ALLMATCH ANYMATCH NONEMATCH ---------------");
+        //Allmatch : verifica si el predicado es verdadero
+        // AnyMatch : verifica si al menos un valor del predicado es verdadero
+        // noneMatch : verifica si ningún elemento pasa el predicado
+
+        List<Integer>  values = Arrays.asList(100,200,300,388,500);
+
+        boolean allMatch = values.stream().allMatch(item -> item > 1);
+        System.out.println(allMatch);
+        boolean anyMatch = values.stream().allMatch(item -> item > 10000);
+        System.out.println(anyMatch);
+        boolean noneMatch = values.stream().allMatch(item -> item > 1);
+        System.out.println(noneMatch);
+
+
+        System.out.println("------- SUM AVERAGE RANGE ---------------");
+        //Sum: sumar
+        //Average : media -> return dooble
+        //Range : Rango
+        //MapToInt nos transforma la lista de id. Adapta el stream a enteros
+        setUpUser();
+        double result = users.stream()
+                .mapToInt(User::getId)
+                .average()
+                .orElse(0);
+        System.out.println("Media: "+result);
+
+        result = users.stream()
+                .mapToInt(User::getId)
+                .sum();
+        System.out.println("Suma: "+result);
+        // Primer parametro como debe empezar segundo donde debe acabar
+        System.out.println("Range: "+IntStream.range(0,100).sum());
+
+
+
 
 
 
